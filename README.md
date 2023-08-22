@@ -29,6 +29,8 @@ Tecnologias apreendidas nesse curso:
 - HTML
 - CSS
 - Mobile-Fist
+- Responsiveness
+
 
 ## 💻 Projetos
 
