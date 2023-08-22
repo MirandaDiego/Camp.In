@@ -19,7 +19,7 @@ Você pode visualizar e interagir com a pagina do projeto <a href="" target="_bl
 
 <p align="center">
   Versão Mobile:<br>
-  <img alt="License" src="./https://thumbs2.imgbox.com/40/e1/GUEG3qO6_t.png" width="70%" display="flex" gap="5px" ><br>
+  <img alt="License" src="https://thumbs2.imgbox.com/40/e1/GUEG3qO6_t.png" width="70%" display="flex" gap="5px" ><br>
 </p>
 
 ## 🚀 Tecnologias
