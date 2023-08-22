@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    background: #191816;
+    margin: 0;
+}
+
+.page {
+    max-width: 33.0rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    background: #191816;
+
+
+}
+
+h1 {
+    color: #D4CCB6;
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 2.6rem;
+    font-weight: 600;
+
+
+}
+
+p {
+    color: #AFB6C2;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    margin-bottom: 27px;
+}
+
+.start {
+    display: flex;
+    gap: 10px;
+    margin: 38px 0px 5px;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    display: none;
+}
+
+legend {
+    color: #AFB6C2;
+    font-family: 'Poppins';
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset input {
+    background: #191816;
+    border-radius: 4px;
+    border: 1px solid #AFB6C2;
+    
+    width: 280px;
+    height: 44px;
+}
+
+.senha {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.email {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.email input {
+    text-align: center;
+    text-indent: calc(-50% + 40px);
+    padding: 12px 36px;
+
+}
+
+.senha input {
+    text-align: center;
+    text-indent: calc(-50% + 40px);
+    padding: 12px 36px;
+
+}
+
+.email::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(images/mail-focus.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.email::before {
+    top: 69%;
+    left: 12px;
+    transform: translateY(-50%);
+}
+
+.senha::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(images/lock.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.senha::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(images/eye.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.senha::before {
+    top: 67%;
+    left: 12px;
+    transform: translateY(-50%);
+}
+
+.senha::after {
+    top: 69%;
+    right: 12px;
+    transform: translateY(-50%);
+}
+
+.div-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.div-footer a {
+    text-decoration: none;
+    color: #FFC632;
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+.checkbox {
+
+    position: relative;
+    display: flex;
+    gap: 5px;
+}
+
+.checkbox input {
+    position: absolute;
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+}
+
+.checkbox label {
+    display: flex;
+    gap: 5px;
+    font-size: 1.2rem;
+    color: #AFB6C2;
+    font-family: 'Poppins';
+}
+
+.checkbox label::before {
+
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: block;
+    border: 1px solid #868686;
+    border-radius: 4px;
+}
+
+.checkbox input:checked+label::before {
+    background-image: url("images/Select.svg");
+    background-position: center;
+}
+
+.checkbox input:focus+label::before {
+    outline: 2px solid #FFC632;
+}
+.box input{
+    
+    color: white;
+    text-align: center;
+
+}
+.box input:focus{
+    outline: 2px solid #FFC632;
+   
+    
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 14px;
+}
+
+
+
+.button button {
+
+    width: 28.0rem;
+    padding: 12px 24px;
+    border: none;
+    align-items: center;
+    border-radius: 4px;
+    background: #FFC632;
+    color: #473404;
+    font-family: 'Poppins';
+    font-size: 1.8rem;
+    font-weight: 600;
+
+}
+
+.button button:hover {
+    cursor: pointer;
+    background: #c58e01;
+    font-weight: bold;
+
+}
+
+.button span,
+.button a {
+    color: #FFC632;
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+}
+
+.button a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.div-footer a:hover,
+.button a:hover {
+    color: wheat;
+}
+
+@media (min-width: 1020px) {
+    .img {
+        width: 724px;
+        height: 692px;
+        display: block;
+    }
+}
+
+@media(min-width: 1440px) {
+    header img {
+        position: fixed;
+        top: 40;
+        left: 40;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+    .start h1{
+        font-size: 26px;
+    }
+
+    legend {
+        font-size: 1.6rem;
+    }
+
+    .page {
+        max-width: 572px;
+        max-height: 512px;
+        border-radius: 4px;
+        background: #24221F;
+        padding: 50px;
+
+    }
+
+    .box input {
+       
+        width: 334px;
+        font-size: 14px;
+        
+    }
+
+    .button button {
+
+        width: 334px;
+        padding: 12px 24px;
+
+    }
+    .email input {
+        text-align: center;
+        text-indent: calc(-50% + 10px);
+        padding: 12px;
+    
+    }
+    
+    .senha input {
+        text-align: center;
+        text-indent: calc(-50% + 10px);
+        padding: 12px;
+    
+    }
+}
+
+@media(min-width: 1920px) {
+    
+    main{
+        display: flex;
+
+    }
+    main .img{
+        width: 50%;
+        height: 100vh;
+    }
+    .page label{
+        font-size: 16px;
+    }
+    .div-footer a{
+        font-size: 14px;
+        align-items: center;
+        margin: 5px 0px 0px;
+
+    }
+    .page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;   
+    }
+    .email input {
+        text-align: center;
+        text-indent: calc(-50% + 10px);
+        padding: 12px;
+    
+    }
+    
+    .senha input {
+        text-align: center;
+        text-indent: calc(-50% + 10px);
+        padding: 12px;
+    
+    }
+    
+
+}
